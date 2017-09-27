@@ -1,0 +1,411 @@
+body, html {
+    height: 100%;
+}
+.parallax { 
+	background-image: url("project 2/118.jpg");
+	height: 100%; 
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax1{
+	background-image: url("project 2/118.jpg");
+	height: 5%; 
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+	padding-top:40px;
+	color:white;
+}
+.header p{
+	display:inline-block;
+	font-size:15px;
+	font-style:italic;
+	font-weight:bold;
+	margin-left:20px;
+	margin-right:20px;
+}
+.nav a{
+	text-decoration:none;
+	color:white;
+}
+.nav a:hover{
+	padding:5px;
+	border-bottom:2px solid white;
+	font-style:normal;
+}
+.header h1{
+	padding-top:80px;
+	font-size:60px;
+}
+.header h2{
+	font-size:35px;
+}
+.header h1,h2{
+	font-family: 'Yesteryear', cursive;
+}
+.social_media{
+	padding-top:20px;
+	color:#42f477;
+	font-size:25px;
+}
+#cover{
+	border:1px solid white;
+	width:50px;
+	height:50px;
+	background-color:white;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius:50%;
+	padding:10px;
+}
+.social_media a{
+	text-decoration:none;
+	color:#42f477;
+	font-size:25px;
+}
+.social_media a:hover{
+	opacity:0.5;
+}
+.arrow{
+	padding-top:50px;
+	cursor:pointer;
+	font-size:40px;
+}
+.arrow a{
+	color:white;
+	opacity:0.6;
+}
+.about{
+	padding-top:30px;
+	padding-bottom:30px;
+	background: #43C6AC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.about h2{
+	border-bottom:1px solid #068445;
+	color:black;
+	line-height:0.1em;
+	margin-left:150px;
+	margin-right:150px;
+}
+.about h2 span{
+	background: #43C6AC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding:0px 20px;
+}
+.about p{
+	margin-left:100px;
+	margin-right:100px;
+	padding-top:20px;
+	text-align:justify;
+	font-size:20px;
+	font-family: 'Courgette';
+	line-height:30px;
+}
+.products{
+	padding-top:20px;
+	padding-bottom:20px;
+	background: #43C6AC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.products h2{
+	border-bottom:1px solid #068445;
+	color:#068445;
+	line-height:0.1em;
+	margin-left:150px;
+	margin-right:150px;
+}
+.products h2 span{
+	background: #43C6AC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding:0px 20px;
+}
+ul {
+  height: 400px;
+  width: 225px;
+  margin: 0 auto;
+  list-style: none;
+  position: relative;
+  padding-top:40px;
+}
+ul li {
+  cursor: pointer;
+  position: absolute;
+  transition: all 0.6s ease-in;
+  opacity: 0;
+  margin-top: 10px;
+}
+ul li img {
+  width: 100%;
+  cursor: pointer;
+}
+li.active {
+  z-index: 999;
+  opacity: 1;
+}
+li.left2 {
+  transform: perspective(600px) translateX(-160%) rotateY(-40deg) scale(0.5);
+  opacity: 1;
+}
+li.left1 {
+  transform: translateX(-102%) scale(0.8);
+  opacity: 1;
+}
+li.right1 {
+  transform: translateX(102%) scale(0.8);
+  opacity: 1;
+}
+li.right2 {
+  transform: perspective(600px) translateX(160%) rotateY(40deg) scale(0.5);
+  opacity: 1;
+}
+#section3{
+	background: #43C6AC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height:auto;
+	padding-top:20px;
+	padding-bottom:40px;
+}
+
+.contact h2{
+	border-bottom:1px solid #068445;
+	margin-right:150px;
+	margin-left:150px;
+	color:#068445;
+	line-height:0.1em;
+	padding-top:50px;
+}
+.contact h2 span{
+	background: #43C6AC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding:0px 20px;
+}
+.get_in_touch{
+	border:1px solid black;
+	height:auto;
+	margin-top:30px;
+	margin-left:50px;
+	margin-right:50px;
+}
+#fill_form{
+	padding-top:60px;
+	padding-bottom:40px;
+}
+#fill_form input{
+	margin:10px;
+	height:40px;
+	padding:10px;
+	width:auto;
+	background-color:white;
+	color:black;
+}
+#fill_form input[type="number"]{
+	width:404px;
+	height:40px;
+	padding:10px;
+}
+#message{
+	margin:10px;
+	height:40px;
+	padding:10px;
+	background-color:white;
+	color:black;
+	width:405px; height:100px;
+}
+#submit{
+	background-color:black;
+	border:1px solid white;
+	color:white;
+	text-align:center;
+	width:70px;
+	height:30px;
+	margin-left:330px;
+}
+#submit:hover{
+	box-shadow:4px 4px 2px black;
+	border:1px solid white;
+}
+.details{
+	border-left:1px solid black;
+	padding-top:10px;
+	color:black;
+	font-size:15px;
+}
+div.fixed a{
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size:20px;
+	color:red;
+	cursor:pointer;
+}
+@media only screen and (max-width: 988px) and (min-width: 570px) {
+#fill_form{
+	border-bottom:1px solid black;
+	margin-left:15px;
+	margin-right:15px;
+}
+.details{
+	border-left-style:none;
+}
+}
+@media screen and (max-width: 680px) {
+.header p{
+	margin-left:15px;
+	margin-right:15px;
+}
+.products{
+	overflow:hidden;
+}
+}
+@media screen and (max-width: 638px) {
+.header p{
+	font-size:14px;
+	margin-left:10px;
+	margin-right:10px;
+}
+.nav img{
+	width:80px !important;
+	height:80px !important;
+}
+#fill_form{
+	border-bottom:1px solid black;
+	margin-left:15px;
+	margin-right:15px;
+}
+.details{
+	border-left-style:none;
+}
+}
+@media screen and (max-width: 460px) {
+.header p{
+	font-size:14px;
+	margin-left:10px;
+	margin-right:10px;
+}
+}
+@media screen and (max-width: 570px) {
+#fill_form input{
+	margin:10px;
+	height:30px;
+	padding:10px;
+	width:250px !important;
+}
+#message{
+	margin:10px;
+	height:40px;
+	padding:10px;
+	width:250px !important;
+	color:black;
+	height:80px;
+}
+#submit{
+	margin-left:180px;
+}
+.about p{
+	margin-left:50px;
+	margin-right:50px;
+	font-size:20px;
+	line-height:25px;
+}
+ul li img {
+  width: 90%;
+}
+}
+@media only screen and (max-width: 530px) and (min-width: 300px) {
+.about h2{
+	margin-left:50px;
+	margin-right:50px;
+}
+.about p{
+	margin-left:40px;
+	margin-right:40px;
+	font-size:18px;
+}
+.products h2{
+	margin-left:50px;
+	margin-right:50px;
+}
+ul {
+  height: 400px;
+  width: 200px;
+}
+.contact h2{
+	margin-right:50px;
+	margin-left:50px;
+}
+}
+@media only screen and (max-width: 560px) and (min-width: 440px) {
+.header p{
+	font-size:13px;
+	margin-left:5px;
+	margin-right:5px;
+}
+.nav img{
+	width:50px !important;
+	height:50px !important;
+}
+.header h1{
+	padding-top:50px;
+	font-size:45px;
+}
+.header h2{
+	font-size:28px;
+}
+.social_media a{
+	font-size:20px;
+}
+#cover{
+	width:40px;
+	height:40px;
+}
+}
+@media only screen and (max-width: 450px) and (min-width: 300px) {
+.header h1{
+	font-size:35px;
+}
+.nav p {
+	text-align:center;
+	padding-top:20px !important;
+}
+.nav img{
+	padding-top:10px !important;
+	float:left;
+}
+.about p{
+margin-left:10px;
+margin-right:10px;
+font-size:18px;
+}
+.header h1{
+	padding-top:50px;
+	font-size:40px;
+}
+.header h2{
+	font-size:25px;
+}
+.social_media a{
+	font-size:15px;
+}
+#cover{
+	width:35px;
+	height:35px;
+}
+}
+//@media only screen and (max-device-width: 1024px) {
+//    .bgimg-1, .bgimg-2, .bgimg-3 {
+ //       background-attachment: scroll;
+ //   }
+//}
