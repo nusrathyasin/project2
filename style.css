@@ -403,6 +403,10 @@ font-size:18px;
 	width:35px;
 	height:35px;
 }
+.get_in_touch{
+	margin-left:20px;
+	margin-right:20px;
+}	
 #fill_form input{
 	margin:10px;
 	height:30px;
@@ -422,6 +426,9 @@ font-size:18px;
 }
 .details{
 font-size:12px;
+}
+.arrow{
+visibility: hidden;
 }
 }
 @media only screen and (max-device-width: 1024px) {
