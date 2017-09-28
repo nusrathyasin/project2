@@ -16,6 +16,7 @@
 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
  <!--jquery -->
     <script type="text/javascript" src="jquery-1.10.1.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
   <!--css file -->
      <link href="style.css" rel="stylesheet" type="text/css" />
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -23,9 +24,15 @@
    <script src="slider.js"></script>
 <!--jquery code -->
 <script type="text/javascript">
-  $(document).ready(function() {
-  $('.arrow').addClass("animated infinite bounce");
-  });
+ $(document).ready(function() {
+			$('.arrow').addClass("animated bounce");
+			});
+			$(document).ready(function() {
+			$(".container button").click(function(){
+		$(".bank_details").toggle();
+		//$("#storyi").hide();
+	});
+});
  </script>
  </head>
 <body>
@@ -34,20 +41,26 @@
 			<div class="text-center" >
 			<div class="nav">
 			<div class="dropdown" style="float:right;">
-			  <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
-			  <div class="dropdown-content">
-				 <a href="#">HOME</a>
-			    <a href="#section1">ABOUT</a>
-			    <a href="#section2">PRODUCTS</a>
-			    <a href="#section3">GET IN TOUCH</a>
-			  </div>
+  <button class="dropbtn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+  <div class="dropdown-content">
+	 <a href="#">Home</a>
+    <a href="#section1">About</a>
+    <a href="#section2">Products</a>
+    <a href="#section3">Get in touch</a>
+  </div>
+</div>
+				<div id="logo">
+				<img src="project 2/logo1.png" alt="logo" width="145" height="125" />
+				</div>
+				<div id="navbar">
+				<h4><a href="#" > Home</a></h4>
+				<h4><a href="#section1"> About</a></h4>
+				
+				<h4><a href="#section2">Products</a></h4>
+				<h4><a href="#section3">Get in touch</a></h4>
+				</div>
 			</div>
-				<p><a href="#" ><i class="fa fa-home" aria-hidden="true"></i> HOME</a></p>
-				<p><a href="#section1"><i class="fa fa-users" aria-hidden="true"></i> ABOUT</a></p>
-				<img src="project 2/logo1.png" alt="logo" width="100" height="100" />
-				<p><a href="#section2"><i class="fa fa-product-hunt" aria-hidden="true"></i> PRODUCTS</a></p>
-				<p><a href="#section3"><i class="fa fa-address-book" aria-hidden="true"></i> GET IN TOUCH</a></p>
-			</div>
+			<div class="main">
 			<h1>Yobu and Rahel Herbals</h1>
 			<h2>....Go Green,Live Healthy....</h2>
 			<div class="social_media">
@@ -57,37 +70,49 @@
 				<a href="#" title="Rss" target="_blank"><i class="fa fa-rss" id="cover" aria-hidden="true"></i></a>
 			</div>
 			<div class="arrow">
-				<a href="#section1"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
+				<a href="#section" title="know more"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
 			</div>
 			</div>
 		</div>
 	</div>
-	<div class="about text-center" id="section1">
-		<div class="container">
-			<h2><span>About Us</span></h2>
-			<p>The name <i>Yobu and Rahel Herbals</i> for managing partners,<b>NM.Rathinasabapathy and S.Latha somasundram.</b>This Herbal Company based at <i>Tiruvarur Dist of Tamilnadu</i>,Who started theirs carriers as herbal and sidha Treatment in Small village <i>Vedaranyam and Udayamarthandapuram</i>.The Medicine is prepared in a clean environment by adopting highest degree of plant personal hygiene to 
-	ensure safety and efficiency of the products. Our challenging product is Hair Regrowth Treatment.We are deal with Indian leading all Biotech products.</p>
-		</div>
 	</div>
-<div class="parallax1"></div> 
-<div class="slideshow">
+	<div class="slideshow" id="section">
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 			<div class="item active">
-				<a href="project 2/01.jpg" target="_blank"><img src="project 2/01.jpg" alt="Appalam" style="width:100%;"></a>
+				<a href="project 2/01.jpg" target="_blank"><img src="project 2/01.jpg" alt="Hair regrowth" style="width:100%;"></a>
 			</div> 
 			<div class="item">
-				<a href="project 2/02.jpg" target="_blank"><img src="project 2/02.jpg" alt="appalam" style="width:100%;"></a>
+				<a href="project 2/02.jpg" target="_blank"><img src="project 2/02.jpg" alt="Herbal and sidda medicine" style="width:100%;"></a>
 			</div>
 			<div class="item">
-				<a href="project 2/03.jpg" target="_blank"><img src="project 2/03.jpg" alt="Spices" style="width:100%;"></a>
+				<a href="project 2/03.jpg" target="_blank"><img src="project 2/03.jpg" alt="Herbal coffee" style="width:100%;"></a>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="parallax1"></div> 
+	<div class="about" id="section1">
+		<div class="container text-center">
+			<h2><span>About Us</span></h2>
+			<p>The name <i>Yobu and Rahel Herbals</i> for managing partners,<b>NM.Rathinasabapathy and S.Latha somasundram.</b>This Herbal Company based at <i>Tiruvarur Dist of Tamilnadu</i>,Who started theirs carriers as herbal and sidha Treatment in Small village <i>Vedaranyam and Udayamarthandapuram</i>.The Medicine is prepared in a clean environment by adopting highest degree of plant personal hygiene to 
+	ensure safety and efficiency of the products. Our challenging product is Hair Regrowth Treatment.We are deal with Indian leading all Biotech products.</p>
+		</div>
+		<div class="container">
+		<button>Get Bank details here</button>
+		<div class="bank_details">
+		<h4><i class="fa fa-university" aria-hidden="true"></i> Bank Details</h4>
+			<p>Indian Bank</p><p>Vedaranyam Branch</p>
+            <p>AC NO: 6324610777</p>
+            <p>IFSC CODE: IDIBOV010</p>
+			</div>
+		</div>
+	</div>
+
+
+ 
 <div class="products text-center" id="section2">
+<div class="container">
 	<h2><span>Our Products</span></h2>
 	<ul>
 	  <li class="left2">
@@ -112,12 +137,17 @@
 		<img src="project 2/p77.jpg">
 	  </li>
 	</ul>
+	</div>
 </div>
-<div class="parallax1"></div> 
+
 <div  id="section3">
 	<div class="contact text-center">
 		<h2><span>Get in touch</span></h2>
+	<center>
+		<div id="map" style="width:90%;height:200px"></div>
+		</center>
 	<div class="get_in_touch">
+	
 		<div class="row">
 		<div class="col-md-6" id="fill_form">
 			<form method="post" name="contact" action="#">
@@ -128,22 +158,20 @@
 				<button id="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i> Send </button>
 			</form>
 		</div>
+		
 		<div class="col-md-6">
 			<div class="details">
-			<h4><i class="fa fa-map-marker" aria-hidden="true"></i> REGD OFFICE</h4>
+			<h4 style="padding-top:30px"><i class="fa fa-map-marker" aria-hidden="true"></i> REGD OFFICE</h4>
 			<p>YOBU AND RAHEL HERBALS</p>
 			<p>NO: 11, MURALI ILLAM SOUTH STREET,VEDARANYAM PO&TK <br/>
 			<p>NAGAPATTINAM DT-614810.</p>
-			<p style="border-bottom:1px solid black"><!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->MAIL: nmrvedai@gmail.com</p>
-			<h4><i class="fa fa-map-marker" aria-hidden="true"></i> SALES DIVISION</h4>
+			<p style="border-bottom:1px solid black;padding-bottom:30px"><!-- <i class="fa fa-envelope" aria-hidden="true"></i> -->MAIL: nmrvedai@gmail.com</p>
+			<h4 style="padding-top:30px;"><i class="fa fa-map-marker" aria-hidden="true"></i> SALES DIVISION</h4>
 			<p>VMRS COMPLEX,1st FLOOR</p>
             <p>UDAYAMARTHANDAPURAM-PO</p>
             <p>TIRRUVARUR DT-614706</p>
-            <p style="border-bottom:1px solid black"><!-- <i class="fa fa-phone" aria-hidden="true"></i> -->CELL:9597282773,9789249305</p>
-			<h4><i class="fa fa-university" aria-hidden="true"></i> BANK DETAILS</h4>
-			<p>INDIAN BANK,VEDARANYAM BRANCH</p>
-            <p>AC NO: 6324610777</p>
-            <p>IFSC CODE: IDIBOV010</p>
+            <p style="padding-bottom:30px"><!-- <i class="fa fa-phone" aria-hidden="true"></i> -->CELL:9597282773,9789249305</p>
+			
 			</div>
 		</div>
 		</div>
@@ -156,5 +184,38 @@
 <div class="footer text-center">
 	<h6>Copyright &copy; 2017 <b>Yobu and Rahel Herbals </b></h6>
 </div>
+	
+	<script type="text/javascript">
+    var locations = [
+      ['VEDARANYAM,NAGAPATTINAM',10.395527,79.859149, 4],
+      ['UDAYAMARTHANDAPURAM,TIRRUVARUR', 10.435352,79.565829, 5],
+         ];
+
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 10,
+      center: new google.maps.LatLng(10.39, 79.85),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) { 
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+	</script>
+	
+	
 </body>
 </html>
