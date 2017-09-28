@@ -524,6 +524,9 @@ font-size:18px;
 .social_media a{
 	font-size:15px;
 }
+	.item img{
+height:350px !important;
+}
 
 #cover{
 	width:35px;
