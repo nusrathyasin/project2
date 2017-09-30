@@ -141,7 +141,6 @@ visibility:hidden;
 	opacity:0.6;
 }
 .about{
-	overflow:hidden;
 	padding-top:30px;
 	padding-bottom:30px;
 	background: #43C6AC;  /* fallback for old browsers */
@@ -162,7 +161,7 @@ visibility:hidden;
 	padding:0px 20px;
 }
 .about p{
-	margin-left:200px;
+	margin-left:100px;
 	margin-right:100px;
 	padding-top:20px;
 	text-align:justify;
@@ -232,7 +231,7 @@ li.right2 {
 }
 
 .container button{
-margin-left:200px;
+margin-left:100px;
 background-color:#11d892;
 border:1px solid #11d892;
 border-radius:10px;
@@ -250,10 +249,6 @@ display:none;
 
 
 }
-#awards {
-display:inline;
-padding-top:60px;
-}
 .bank_details p{
 line-height:1px !important;
 font-family:'Courgette';
@@ -261,6 +256,29 @@ font-family:'Courgette';
 .bank_details h4{
 margin-left:100px;
 font-family:'Courgette';
+}
+.awards{
+margin-left:20px;
+//margin-right:40px;
+text-align:center;
+}
+.awards img{
+border:2px solid black;
+//padding-right:10px;
+
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+cursor:pointer;	
+border:2px solid white;
+display:inline;
+}
+.awards h3 span{
+background: #43C6AC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	padding:0 20px;
+	font-family:Yesteryear;
+	font-size:30px;
+	
 }
 #section3{
 	background: #43C6AC;  /* fallback for old browsers */
@@ -449,6 +467,13 @@ ul {
 	margin-right:50px;
 	margin-left:50px;
 }
+.awards{
+margin-left:5px;
+}
+.awards img{
+width:350px;
+height:200px;
+}
 }
 @media only screen and (max-width: 560px) and (min-width: 440px) {
 .header p{
@@ -473,6 +498,9 @@ ul {
 #cover{
 	width:40px;
 	height:40px;
+}
+.item img{
+height:400px !important;
 }
 }
 @media only screen and (max-width: 700px) and (min-width: 450px) {
@@ -529,10 +557,9 @@ font-size:18px;
 .social_media a{
 	font-size:15px;
 }
-	.item img{
+.item img{
 height:350px !important;
 }
-
 #cover{
 	width:35px;
 	height:35px;
@@ -564,9 +591,16 @@ font-size:12px;
 .arrow{
 visibility: hidden;
 }
+.awards{
+margin-left:5px;
+}
+.awards img{
+width:300px;
+height:200px;
+}
 }
 @media only screen and (max-device-width: 1024px) {
-    .parallax {
+    .parallax, .parallax1 {
         background-attachment: scroll;
    }
 }
