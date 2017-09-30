@@ -141,6 +141,7 @@ visibility:hidden;
 	opacity:0.6;
 }
 .about{
+	overflow:hidden;
 	padding-top:30px;
 	padding-bottom:30px;
 	background: #43C6AC;  /* fallback for old browsers */
@@ -161,7 +162,7 @@ visibility:hidden;
 	padding:0px 20px;
 }
 .about p{
-	margin-left:100px;
+	margin-left:200px;
 	margin-right:100px;
 	padding-top:20px;
 	text-align:justify;
@@ -231,7 +232,7 @@ li.right2 {
 }
 
 .container button{
-margin-left:100px;
+margin-left:200px;
 background-color:#11d892;
 border:1px solid #11d892;
 border-radius:10px;
@@ -248,6 +249,10 @@ box-shadow:3px 3px grey;
 display:none;
 
 
+}
+#awards {
+display:inline;
+padding-top:60px;
 }
 .bank_details p{
 line-height:1px !important;
